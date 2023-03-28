@@ -1,6 +1,6 @@
 <!-- default badges list -->
 <!-- default badges end -->
-## Implement Column Chooser for .NET MAUI DataGrid 
+## Implement a Column Chooser for .NET MAUI DataGrid 
 
 This example shows how to implement a [DataGrid](xref:DevExpress.Maui.DataGrid.DataGridView) control's column chooser.
 
