@@ -4,6 +4,7 @@
 
 This example shows how to implement a [DataGrid](xref:DevExpress.Maui.DataGrid.DataGridView) control's column chooser.
 
+<img src="https://user-images.githubusercontent.com/12169834/228222481-197a4064-f461-4f13-8877-412c81263fd2.png" width="30%"/>
 
 
 Used controls and their properties:
