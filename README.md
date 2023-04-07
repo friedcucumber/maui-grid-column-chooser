@@ -64,7 +64,7 @@ Used controls and their properties:
 
     File to Look At: [MainPage.xaml](CS/MainPage.xaml)
 
-* You can bind the [CheckEdit](https://docs.devexpress.com/MAUI/DevExpress.Maui.Editors.CheckEdit) to the [GridColumn.ActualCaption](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.GridColumn.ActualCaption) property to display the Data Grid's column caption:
+* You can bind the [CheckEdit](https://docs.devexpress.com/MAUI/DevExpress.Maui.Editors.CheckEdit) to the [GridColumn.ActualCaption](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.GridColumn.ActualCaption) property to display the [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid)'s column caption:
 
     ```xaml
     <dxcv:DXCollectionView ...>
@@ -82,7 +82,7 @@ Used controls and their properties:
 
     File to Look At: [MainPage.xaml](CS/MainPage.xaml)
 
-* Specify the [GridColumn.MinWidth](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.GridColumn.MinWidth) property to hide horizontal scroll bar when the summary width of visible Data Grid columns is lower than the width of the device view port:
+* Specify the [GridColumn.MinWidth](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.GridColumn.MinWidth) property to hide horizontal scroll bar when the summary width of visible [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid) columns is lower than the width of the device view port:
 
     ```xaml
     <dxg:DataGridView ...>
