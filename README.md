@@ -17,7 +17,7 @@ Used controls and their properties:
 ## Implementation Details
 
 
-* [DataGridView](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView)'s column chooser is displayed within the [DXPopup](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.DXPopup) control. [DXPopup](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.DXPopup) contains the [DXCollectionView](https://docs.devexpress.com/MAUI/DevExpress.Maui.CollectionView.DXCollectionView) that is bind to the [DataGridView.Column](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.Columns) collection:
+* [DataGridView](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView)'s column chooser is displayed within the [DXPopup](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.DXPopup) control. [DXPopup](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.DXPopup) contains the [DXCollectionView](https://docs.devexpress.com/MAUI/DevExpress.Maui.CollectionView.DXCollectionView) that is bound to the [DataGridView.Column](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.Columns) collection:
 
     ```xaml
     <dxco:DXPopup x:Name="columnChooserPopup" ...>
