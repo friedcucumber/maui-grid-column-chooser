@@ -46,7 +46,7 @@ Included controls and their properties:
 
     File to Look At: [MainPage.xaml](CS/MainPage.xaml)
 
-* To align the [CheckEdit](https://docs.devexpress.com/MAUI/DevExpress.Maui.Editors.CheckEdit) component's check boxes to the right, set the [CheckEdit.CheckBoxPosition](https://docs.devexpress.com/MAUI/DevExpress.Maui.Editors.CheckEdit.CheckBoxPosition) property to [CheckBoxPosition.End](https://docs.devexpress.com/MAUI/DevExpress.Maui.Editors.CheckBoxPosition.End):
+* To align the [CheckEdit](https://docs.devexpress.com/MAUI/DevExpress.Maui.Editors.CheckEdit) component's checkboxes to the right, set the [CheckEdit.CheckBoxPosition](https://docs.devexpress.com/MAUI/DevExpress.Maui.Editors.CheckEdit.CheckBoxPosition) property to [CheckBoxPosition.End](https://docs.devexpress.com/MAUI/DevExpress.Maui.Editors.CheckBoxPosition.End):
 
     ```xaml
     <dxcv:DXCollectionView ...>
@@ -82,7 +82,7 @@ Included controls and their properties:
 
     File to Look At: [MainPage.xaml](CS/MainPage.xaml)
 
-* Specify the [GridColumn.MinWidth](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.GridColumn.MinWidth) property to a hide horizontal scroll bar when the summary width of visible [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid) columns is lower than the width of the device view port:
+* Specify the [GridColumn.MinWidth](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.GridColumn.MinWidth) property to a hide horizontal scroll bar when the total width of visible [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid) columns is less than the width of the device's viewport:
 
     ```xaml
     <dxg:DataGridView ...>
