@@ -2,11 +2,11 @@
 <!-- default badges end -->
 ## DataGrid for .NET MAUI - Implement a Column Chooser
 
-This example shows how to implement a [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid) control's column chooser.
+This example demonstrates how to implement a [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid) column chooser.
 
 <img src="https://user-images.githubusercontent.com/12169834/228222481-197a4064-f461-4f13-8877-412c81263fd2.png" width="30%"/>
 
-Used controls and their properties:
+Included controls and their properties:
 
 * [DataGridView](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView): [AutoGenerateColumnsModeDataGrid](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.AutoGenerateColumnsModeDataGrid), [TemplateColumn](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.TemplateColumn)
 * [DXPopup](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.DXPopup): [IsOpen](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.DXPopup.IsOpen)
@@ -16,7 +16,7 @@ Used controls and their properties:
 
 ## Implementation Details
 
-* [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid)'s column chooser is displayed within the [DXPopup](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.DXPopup) control. [DXPopup](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.DXPopup) contains the [DXCollectionView](https://docs.devexpress.com/MAUI/DevExpress.Maui.CollectionView.DXCollectionView) that is bound to the [DataGridView.Column](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.Columns) collection:
+* A [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid) column chooser is displayed in the [DXPopup](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.DXPopup) control. [DXPopup](https://docs.devexpress.com/MAUI/DevExpress.Maui.Controls.DXPopup) contains the [DXCollectionView](https://docs.devexpress.com/MAUI/DevExpress.Maui.CollectionView.DXCollectionView) bound to the [DataGridView.Column](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.Columns) collection:
 
     ```xaml
     <dxco:DXPopup x:Name="columnChooserPopup" ...>
@@ -36,7 +36,7 @@ Used controls and their properties:
 
     File to Look At: [MainPage.xaml](CS/MainPage.xaml)
 
-* Set the [DXCollectionView.ReduceSizeToContent](https://docs.devexpress.com/MAUI/DevExpress.Maui.CollectionView.DXCollectionView.ReduceSizeToContent) property to `true` to size the [DXCollectionView](https://docs.devexpress.com/MAUI/DevExpress.Maui.CollectionView.DXCollectionView) to fit its content:
+* Set the [DXCollectionView.ReduceSizeToContent](https://docs.devexpress.com/MAUI/DevExpress.Maui.CollectionView.DXCollectionView.ReduceSizeToContent) property to `true` to resize the [DXCollectionView](https://docs.devexpress.com/MAUI/DevExpress.Maui.CollectionView.DXCollectionView) to fit its content:
 
     ```xaml
     <dxcv:DXCollectionView ReduceSizeToContent="True" ...>
@@ -46,7 +46,7 @@ Used controls and their properties:
 
     File to Look At: [MainPage.xaml](CS/MainPage.xaml)
 
-* To align the [CheckEdit](https://docs.devexpress.com/MAUI/DevExpress.Maui.Editors.CheckEdit)'s check boxes to right, set the [CheckEdit.CheckBoxPosition](https://docs.devexpress.com/MAUI/DevExpress.Maui.Editors.CheckEdit.CheckBoxPosition) property to [CheckBoxPosition.End](https://docs.devexpress.com/MAUI/DevExpress.Maui.Editors.CheckBoxPosition.End):
+* To align the [CheckEdit](https://docs.devexpress.com/MAUI/DevExpress.Maui.Editors.CheckEdit) component's check boxes to the right, set the [CheckEdit.CheckBoxPosition](https://docs.devexpress.com/MAUI/DevExpress.Maui.Editors.CheckEdit.CheckBoxPosition) property to [CheckBoxPosition.End](https://docs.devexpress.com/MAUI/DevExpress.Maui.Editors.CheckBoxPosition.End):
 
     ```xaml
     <dxcv:DXCollectionView ...>
@@ -64,7 +64,7 @@ Used controls and their properties:
 
     File to Look At: [MainPage.xaml](CS/MainPage.xaml)
 
-* You can bind the [CheckEdit](https://docs.devexpress.com/MAUI/DevExpress.Maui.Editors.CheckEdit) to the [GridColumn.ActualCaption](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.GridColumn.ActualCaption) property to display the [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid)'s column caption:
+* You can bind [CheckEdit](https://docs.devexpress.com/MAUI/DevExpress.Maui.Editors.CheckEdit) to the [GridColumn.ActualCaption](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.GridColumn.ActualCaption) property to display the [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid)'s column caption:
 
     ```xaml
     <dxcv:DXCollectionView ...>
@@ -82,7 +82,7 @@ Used controls and their properties:
 
     File to Look At: [MainPage.xaml](CS/MainPage.xaml)
 
-* Specify the [GridColumn.MinWidth](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.GridColumn.MinWidth) property to hide horizontal scroll bar when the summary width of visible [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid) columns is lower than the width of the device view port:
+* Specify the [GridColumn.MinWidth](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.GridColumn.MinWidth) property to a hide horizontal scroll bar when the summary width of visible [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid) columns is lower than the width of the device view port:
 
     ```xaml
     <dxg:DataGridView ...>
